@@ -1,9 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import { TailwindProvider, tw } from "nativewind";
+import { TailwindProvider, tw } from "tailwindcss-react-native";
+import { NavigationContainer } from '@react-navigation/native';
 
 export default function App() {
   return (
+    <NavigationContainer>
     <TailwindProvider>
     <View style={styles.container}>
       <Text style={tw`text-red-500`}>Open up App.js to start working on your app!
@@ -11,6 +13,7 @@ export default function App() {
       <StatusBar style="auto" />
     </View>
     </TailwindProvider>
+    </NavigationContainer>
   );
 }
 

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@react-navigation/native": "^6.1.6",
+    "babel-plugin-tailwind": "^0.1.10",
     "expo": "^46.0.21",
     "expo-status-bar": "~1.4.4",
     "hermes": "^0.0.8",
