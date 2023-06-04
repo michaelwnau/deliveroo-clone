@@ -1,5 +1,8 @@
 // babel.config.js
-module.exports = {
-  presets: ["@babel/preset-env", "@babel/preset-react"],
-  plugins: ["nativewind/babel"],
+module.exports = function (api) {
+  api.cache(true);
+  return {
+    presets: ["babel-preset-expo"],
+    plugins: ["tailwindcss-react-native/babel"],
+  };
 };
