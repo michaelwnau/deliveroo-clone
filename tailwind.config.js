@@ -1,6 +1,6 @@
 // tailwind.config.js
 
-export default {
+module.exports = {
     - content: [],
     + content: ["./App.{js,jsx,ts,tsx}", "./<custom-folder>/**/*.{js,jsx,ts,tsx}"],
       theme: {
